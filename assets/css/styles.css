@@ -1,0 +1,45 @@
+:root {
+    --primary: #02df95;
+    --primary-dark: #01a783;
+    --on-primary: #d6e7fa;
+    --spacing-mini: 0.5rem;
+}
+
+body {
+    font-family: system-ui, serif;
+    padding: 2rem;
+    max-width: 80ch;
+    margin-inline: auto;
+    text-align: center;
+}
+
+/* Resize container */
+.card-container {
+    display: block;
+    container-type: inline-size;
+    resize: both;
+    overflow: auto;
+    padding: 1rem;
+    border: 2px solid var(--primary-dark);
+}
+
+.card {
+    display: flex;
+    gap: 1rem;
+}
+
+.card__img {
+    width: auto;
+    height: 10rem;
+}
+
+@container (width < 350px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card .card__img {
+        width: 2rem;
+        height: auto;
+    }
+}
