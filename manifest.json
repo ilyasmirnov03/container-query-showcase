@@ -1,0 +1,9 @@
+{
+    "name": "Container Query Showcase",
+    "short_name": "@container",
+    "theme_color": "#02df95",
+    "background_color": "#ffffff",
+    "display": "browser",
+    "scope": "/",
+    "start_url": "/"
+}
